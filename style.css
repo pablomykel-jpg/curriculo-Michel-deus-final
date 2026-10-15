@@ -1,0 +1,209 @@
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estrutura do currículo */
+.Curriculo {
+    display: flex;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 30px auto;
+    background-color: #ffffff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Barra lateral */
+.lateral {
+    width: 30%;
+    padding: 35px 25px;
+    background: linear-gradient(180deg, #00179c, #0039be);
+    color: aliceblue;
+    text-align: center;
+}
+
+/* Foto */
+.foto img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 4px solid aliceblue;
+    object-fit: cover;
+    display: block;
+}
+
+/* Nome e cargo */
+.lateral h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.lateral > .foto > p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #dce6ff;
+}
+
+/* Contato */
+.lateral section {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.lateral h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #8daaff;
+}
+
+.lateral section p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    overflow-wrap: anywhere;
+}
+
+.lateral a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.lateral a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.conteudo {
+    width: 70%;
+    padding: 40px;
+    min-width: 0;
+}
+
+/* Seções */
+.conteudo section {
+    margin-bottom: 35px;
+}
+
+/* Títulos */
+.conteudo h1 {
+    width: 100%;
+    font-size: 24px;
+    color: #0039be;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0039be;
+}
+
+/* Parágrafos */
+.conteudo p {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Listas */
+.conteudo ul {
+    width: 100%;
+    padding-left: 25px;
+    border-bottom: 1px solid #e0e5ed;
+    padding-bottom: 15px;
+}
+
+.conteudo li {
+    font-size: 15px;
+    margin-bottom: 14px;
+    padding-left: 5px;
+}
+
+.conteudo li::marker {
+    color: #0039be;
+}
+
+/* Formação e outros itens */
+.item {
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    font-size: 19px;
+    color: #0039be;
+    margin-bottom: 10px;
+}
+
+.item p,
+.item span {
+    font-size: 16px;
+}
+
+/* Links e textos longos */
+.conteudo a {
+    color: #0039be;
+    overflow-wrap: anywhere;
+}
+
+/* Adaptação para tablets e celulares */
+@media (max-width: 768px) {
+    .Curriculo {
+        flex-direction: column;
+        margin: 10px;
+        border-radius: 8px;
+    }
+
+    .lateral,
+    .conteudo {
+        width: 100%;
+    }
+
+    .lateral {
+        padding: 30px 20px;
+    }
+
+    .lateral section {
+        max-width: 400px;
+        margin: 25px auto 0;
+    }
+
+    .conteudo {
+        padding: 25px 20px;
+    }
+
+    .conteudo h1 {
+        font-size: 21px;
+    }
+
+    .conteudo p {
+        text-align: left;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 400px) {
+    .conteudo {
+        padding: 20px 15px;
+    }
+
+    .lateral h1 {
+        font-size: 21px;
+    }
+
+    .conteudo h1 {
+        font-size: 19px;
+    }
+}
