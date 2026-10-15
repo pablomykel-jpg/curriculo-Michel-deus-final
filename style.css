@@ -1,5 +1,5 @@
 
-/* Configuração geral */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Estrutura do currículo */
+
 .Curriculo {
     display: flex;
     max-width: 1200px;
@@ -25,7 +25,7 @@ body {
     overflow: hidden;
 }
 
-/* Barra lateral */
+
 .lateral {
     width: 30%;
     padding: 35px 25px;
@@ -34,7 +34,7 @@ body {
     text-align: center;
 }
 
-/* Foto */
+
 .foto img {
     width: 180px;
     height: 180px;
@@ -45,7 +45,7 @@ body {
     display: block;
 }
 
-/* Nome e cargo */
+
 .lateral h1 {
     font-size: 24px;
     margin-bottom: 8px;
@@ -58,7 +58,6 @@ body {
     color: #dce6ff;
 }
 
-/* Contato */
 .lateral section {
     margin-top: 25px;
     text-align: left;
@@ -88,19 +87,19 @@ body {
     text-decoration: underline;
 }
 
-/* Conteúdo principal */
+
 .conteudo {
     width: 70%;
     padding: 40px;
     min-width: 0;
 }
 
-/* Seções */
+
 .conteudo section {
     margin-bottom: 35px;
 }
 
-/* Títulos */
+
 .conteudo h1 {
     width: 100%;
     font-size: 24px;
@@ -110,7 +109,7 @@ body {
     border-bottom: 2px solid #0039be;
 }
 
-/* Parágrafos */
+
 .conteudo p {
     width: 100%;
     font-size: 16px;
@@ -118,7 +117,7 @@ body {
     text-align: justify;
 }
 
-/* Listas */
+
 .conteudo ul {
     width: 100%;
     padding-left: 25px;
@@ -136,7 +135,7 @@ body {
     color: #0039be;
 }
 
-/* Formação e outros itens */
+
 .item {
     margin-bottom: 20px;
 }
@@ -152,13 +151,13 @@ body {
     font-size: 16px;
 }
 
-/* Links e textos longos */
+
 .conteudo a {
     color: #0039be;
     overflow-wrap: anywhere;
 }
 
-/* Adaptação para tablets e celulares */
+
 @media (max-width: 768px) {
     .Curriculo {
         flex-direction: column;
@@ -193,7 +192,6 @@ body {
     }
 }
 
-/* Celulares pequenos */
 @media (max-width: 400px) {
     .conteudo {
         padding: 20px 15px;
